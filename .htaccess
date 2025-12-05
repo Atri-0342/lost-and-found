@@ -1,0 +1,8 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Route sitemap.xml to PHP generator
+RewriteRule ^sitemap\.xml$ sitemap.xml.php [L]
+
+# Optional: redirect missing trailing slash to folder
+DirectorySlash On
